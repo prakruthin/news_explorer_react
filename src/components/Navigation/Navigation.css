@@ -1,0 +1,103 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.navigation__actions {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navigation__login-btn {
+  width: 152px;
+}
+
+.navigation__login-btn,
+.navigation__logout-btn {
+  background: none;
+  cursor: pointer;
+  height: 48px;
+  border-radius: 100px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  border: 1px solid;
+}
+
+.navigation__logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+}
+
+.navigation__logout-text {
+  width: 56px;
+}
+
+/* DARK THEME */
+.header_theme_dark .navigation__link,
+.header_theme_dark .navigation__login-btn,
+.header_theme_dark .navigation__logout-btn,
+.header_theme_dark .navigation__logout-text {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.header_theme_dark .navigation__logout-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* LIGHT THEME */
+.header_theme_light .navigation__link,
+.header_theme_light .navigation__login-btn,
+.header_theme_light .navigation__logout-btn,
+.header_theme_light .navigation__logout-text {
+  color: #1a1b22;
+  border-color: #1a1b22;
+}
+
+.header_theme_light .navigation__logout-icon {
+  filter: invert(1);
+}
+
+/* .menu__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.25;
+  cursor: pointer;
+  transition: opacity 0.2s ease, border-bottom 0.2s ease;
+}
+  */
+.menu__link_active {
+  border-bottom: 2px solid currentColor;
+}
+.navigation__link {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.navigation__link_active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+}
+.navigation__link:hover {
+  opacity: 0.7;
+}

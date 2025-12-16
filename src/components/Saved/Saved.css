@@ -1,0 +1,9 @@
+.saved__cards-list {
+  padding: 64px 104px;
+  background-color: #f5f6f7;
+  list-style-type: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  gap: 16px;
+}

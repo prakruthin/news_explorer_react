@@ -1,0 +1,39 @@
+.search-results {
+  padding: 80px 104px;
+  background-color: #f5f6f7;
+  font-family: RobotoSlab, sans-serif;
+}
+
+.search-results__heading {
+  margin: 0;
+  color: #1a1b22;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+  padding: 0 0 64px;
+}
+
+.cards__list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  gap: 16px;
+}
+
+.search-results__load-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-results__load-more:hover {
+  background-color: #005bb5;
+}

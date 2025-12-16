@@ -1,0 +1,25 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  padding: 80px 104px;
+}
+
+.about__author {
+  display: flex;
+  flex-direction: column;
+  padding: 51px 112px 0 56px;
+  gap: 24px;
+  color: #1a1b22;
+}
+.about__author-heading {
+  font-family: RobotoSlab, sans-serif;
+  margin: 0;
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 400;
+}
+.about__author-description {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 24px;
+}

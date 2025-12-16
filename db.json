@@ -1,0 +1,49 @@
+{
+  "saved": [
+    {
+      "_id": "3fbb1c92-5756-40de-aa09-89c7cde5d4a8",
+      "keyword": "Emily in paris",
+      "source": {
+        "id": "business-insider",
+        "name": "business-insider"
+      },
+      "author": "Gabbi Shaw",
+      "title": "11 Netflix shows that went on for too long — sorry",
+      "description": "Even though Netflix has the reputation for canceling shows early, there are a few Netflix Originals that didn't deserve all the time they got.",
+      "content": "Dustin, Mike, Lucas, and Will in season five of \"Stranger Things.\"Courtesy of Netflix\r\n<ul><li>Netflix is known for canceling shows before their time, but some shows overstay their welcome.</li><li>\"… [+9306 chars]",
+      "url": "https://www.businessinsider.com/netflix-shows-that-went-on-for-too-long",
+      "urlToImage": "https://i.insider.com/6920ea76e1a9cbb014dec75d?width=1200&format=jpeg",
+      "publishedAt": "2025-11-29T15:02:01Z"
+    },
+    {
+      "_id": "a218c7e9-8a28-4db5-9670-dd7cb9c74df6",
+      "keyword": "Tree",
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "Unknown",
+      "title": "Men arrested after village Christmas tree cut down",
+      "description": "Police say they are in the process of charging one man with criminal damage after the tree was felled.",
+      "content": "Two men have been arrested after a Christmas tree which has stood in a village for more than 10 years was cut down, hours after its lights were switched on.\r\nThe tree, in Shotton Colliery, County Dur… [+657 chars]",
+      "url": "https://www.bbc.com/news/articles/c62nnpez1l4o",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/176e/live/e2716fd0-d800-11f0-909c-c78234d2d074.png",
+      "publishedAt": "2025-12-13T09:10:48Z"
+    },
+    {
+      "_id": "6a8b8a2f-9ec6-4ead-9cfd-4db11693ecef",
+      "keyword": "Stranger Things",
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Sabina Graves",
+      "title": "The Duffers Reveal the Next ‘Stranger Things’ Episode Titles and Directors",
+      "description": "The hit Netflix series returns on December 25 with three more episodes, leading into the big series finale on December 31.",
+      "content": "On Instagram, Ross Duffer revealed a tiny bit more about the next drop of Stranger Things season five episodes coming to Netflix this Christmas.\r\n“Chapters Five, Six and Seven: locked, mixed, scored,… [+1624 chars]",
+      "url": "https://gizmodo.com/the-duffers-reveal-the-next-stranger-things-episode-titles-and-directors-2000698801",
+      "urlToImage": "https://gizmodo.com/app/uploads/2025/12/Stranger-Things-vol-2-netflix-1200x675.jpg",
+      "publishedAt": "2025-12-12T12:00:17Z"
+    }
+  ]
+}

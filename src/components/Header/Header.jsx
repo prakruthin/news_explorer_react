@@ -1,16 +1,18 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import Navigation from "../Navigation/Navigation";
-// import logoutIcon from "../../assets/logout.svg";
 
-function Header({ handleLogin, handleSignOut, isLoggedIn }) {
-  const location = useLocation();
-  const isSavedRoute = location.pathname === "/saved-news";
-
+function Header({
+  handleLogin,
+  handleSignOut,
+  isLoggedIn,
+  isMainRoute,
+  onRegisterModalSubmit,
+}) {
   return (
     <header
       className={`header ${
-        isSavedRoute ? "header_theme_light" : "header_theme_dark"
+        isMainRoute ? "header_theme_dark" : "header_theme_light"
       }`}
     >
       <div className="header__container">
@@ -21,6 +23,7 @@ function Header({ handleLogin, handleSignOut, isLoggedIn }) {
           handleLogin={handleLogin}
           handleSignOut={handleSignOut}
           isLoggedIn={isLoggedIn}
+          onRegisterModalSubmit={onRegisterModalSubmit}
         />
       </div>
     </header>

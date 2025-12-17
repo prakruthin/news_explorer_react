@@ -10,20 +10,21 @@ import Footer from "../Footer/Footer";
 import LoginModal from "../LoginModal/LoginModal";
 import RegisterModal from "../RegisterModal/RegisterModal";
 import ProtectedRoute from "../../ProtectedRoute/ProtectedRoute.jsx";
-import { newsArticles } from "../../utils/constants";
 import { getSaved, addSaved, deleteSaved } from "../../utils/api.js";
-
-import { removeToken } from "../../utils/token.js";
+import { register, authorize } from "../../utils/auth.js";
+import { setToken, removeToken } from "../../utils/token.js";
 
 function App() {
   const [activeModal, setActiveModal] = useState("");
   const [currentUser, setCurrentUser] = useState({ username: "", email: "" });
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [savedNews, setSavedNews] = useState([]);
   const [searchKeyword, setSearchKeyword] = useState("");
-  // const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const navigate = useNavigate();
+
+  const generateFakeToken = () => Math.random().toString(36).substring(2);
 
   const handleSignup = () => {
     setActiveModal("register-form");
@@ -35,19 +36,58 @@ function App() {
 
   const closeActiveModal = () => {
     setActiveModal("");
-    // setItemToDelete(null);
   };
 
-  // function handleSubmit(request) {
-  //   setIsLoading(true);
-  //   request()
-  //     .then(() => closeActiveModal())
-  //     .catch((err) => console.error("Error:", err))
-  //     .finally(() => setIsLoading(false));
-  // }
+  function handleSubmit(request) {
+    setIsLoading(true);
+    request()
+      .then(() => closeActiveModal())
+      .catch((err) => console.error("Error:", err))
+      .finally(() => setIsLoading(false));
+  }
+
+  const handleLoginModalSubmit = ({ email, password }) => {
+    if (!email || !password) {
+      console.log("Missing value");
+      return;
+    }
+    function makeRequest() {
+      return authorize({ email, password }).then((user) => {
+        const fakeToken = generateFakeToken();
+
+        setToken(fakeToken);
+        localStorage.setItem("user", JSON.stringify(user));
+
+        setCurrentUser(user);
+        setIsLoggedIn(true);
+        navigate("/");
+      });
+    }
+    handleSubmit(makeRequest);
+  };
+
+  const handleRegisterModalSubmit = ({ email, password, name }) => {
+    function makeRequest() {
+      return register({ email, password, name })
+        .then(() => {
+          return authorize({ email, password });
+        })
+        .then((user) => {
+          const fakeToken = generateFakeToken();
+
+          setToken(fakeToken);
+          localStorage.setItem("user", JSON.stringify(user));
+          setCurrentUser(user);
+          setIsLoggedIn(true);
+          navigate("/");
+        });
+    }
+    handleSubmit(makeRequest);
+  };
 
   const handleSignOut = () => {
     removeToken();
+    localStorage.removeItem("user");
     navigate("/");
     setIsLoggedIn(false);
     setCurrentUser({});
@@ -68,7 +108,6 @@ function App() {
   };
 
   const handleCardBookmarkDelete = (item) => {
-    console.log(item);
     deleteSaved(item._id)
       .then(() => {
         setSavedNews((prev) => prev.filter((saved) => saved._id !== item._id));
@@ -102,6 +141,16 @@ function App() {
       .catch(console.error);
   }, []);
 
+  useEffect(() => {
+    const token = localStorage.getItem("jwt");
+    const storedUser = localStorage.getItem("user");
+
+    if (!token || !storedUser) return;
+
+    setIsLoggedIn(true);
+    setCurrentUser(JSON.parse(storedUser));
+  }, []);
+
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <div className="page">
@@ -114,12 +163,12 @@ function App() {
                   handleLogin={handleLogin}
                   handleSignOut={handleSignOut}
                   isLoggedIn={isLoggedIn}
-                  newsArticles={newsArticles}
                   isMainRoute={true}
                   onCardBookmark={handleCardBookmark}
                   searchKeyword={searchKeyword}
                   setSearchKeyword={setSearchKeyword}
                   savedNews={savedNews}
+                  onRegisterModalSubmit={handleRegisterModalSubmit}
                 />
               }
             />
@@ -129,7 +178,7 @@ function App() {
                 <ProtectedRoute
                   element={Saved}
                   isLoggedIn={isLoggedIn}
-                  onSignout={handleSignOut}
+                  handleSignOut={handleSignOut}
                   savedNews={savedNews}
                   isMainRoute={false}
                   searchKeyword={searchKeyword}
@@ -145,16 +194,16 @@ function App() {
         <RegisterModal
           onClose={closeActiveModal}
           isOpen={activeModal === "register-form"}
-          // onRegisterModalSubmit={handleRegisterModalSubmit}
+          onRegisterModalSubmit={handleRegisterModalSubmit}
           onSwitchForm={handleLogin}
-          // isLoading={isLoading}
+          isLoading={isLoading}
         />
         <LoginModal
           onClose={closeActiveModal}
           isOpen={activeModal === "login-form"}
-          // onLoginModalSubmit={handleLoginModalSubmit}
+          onLoginModalSubmit={handleLoginModalSubmit}
           onSwitchForm={handleSignup}
-          // isLoading={isLoading}
+          isLoading={isLoading}
         />
       </div>
     </CurrentUserContext.Provider>

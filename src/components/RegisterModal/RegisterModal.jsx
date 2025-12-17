@@ -12,7 +12,6 @@ function RegisterModal({
     email: "",
     password: "",
     name: "",
-    avatar: "",
   };
   const { values, setValues, handleChange } = useForm(defaultValues);
   function handleSubmit(evt) {
@@ -24,7 +23,7 @@ function RegisterModal({
   return (
     <ModalWithForm
       buttonText={isLoading ? "Saving..." : "Next"}
-      switchText="or Log in"
+      switchText="or Sign in"
       title="Sign up"
       onClose={onClose}
       isOpen={isOpen}

@@ -10,7 +10,6 @@ export function getSaved() {
 }
 
 export function addSaved(article) {
-  console.log(article);
   const savedArticle = {
     _id: article._id,
     keyword: article.keyword,
@@ -22,6 +21,7 @@ export function addSaved(article) {
     url: article.url,
     urlToImage: article.urlToImage || "",
     publishedAt: article.publishedAt || "",
+    savedBy: article.savedBy,
   };
 
   return fetch(`${baseUrl}/saved`, {
@@ -32,7 +32,6 @@ export function addSaved(article) {
 }
 
 export function deleteSaved(id) {
-  console.log(id);
   return fetch(`${baseUrl}/saved/${id}`, {
     method: "DELETE",
   }).then(checkResponse);

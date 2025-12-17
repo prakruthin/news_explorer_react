@@ -1,5 +1,7 @@
 import "./newsCards.css";
 import { formatDateToLong } from "../../utils/formatDate";
+import CurrentUserContext from "../../contexts/CurrentUserContext";
+import { useContext } from "react";
 
 function NewsCards({
   item,
@@ -9,11 +11,12 @@ function NewsCards({
   onCardBookmarkDelete,
   savedNews,
 }) {
-  console.log(item);
+  const currentUser = useContext(CurrentUserContext);
   const handleSaveArticle = () => {
     onCardBookmark({
       ...item,
       keyword: searchKeyword,
+      savedBy: currentUser._id,
     });
   };
   const isArticleSaved = (article) =>

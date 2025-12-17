@@ -1,49 +1,88 @@
 {
-  "saved": [
+  "users": [
     {
-      "_id": "3fbb1c92-5756-40de-aa09-89c7cde5d4a8",
-      "keyword": "Emily in paris",
-      "source": {
-        "id": "business-insider",
-        "name": "business-insider"
-      },
-      "author": "Gabbi Shaw",
-      "title": "11 Netflix shows that went on for too long — sorry",
-      "description": "Even though Netflix has the reputation for canceling shows early, there are a few Netflix Originals that didn't deserve all the time they got.",
-      "content": "Dustin, Mike, Lucas, and Will in season five of \"Stranger Things.\"Courtesy of Netflix\r\n<ul><li>Netflix is known for canceling shows before their time, but some shows overstay their welcome.</li><li>\"… [+9306 chars]",
-      "url": "https://www.businessinsider.com/netflix-shows-that-went-on-for-too-long",
-      "urlToImage": "https://i.insider.com/6920ea76e1a9cbb014dec75d?width=1200&format=jpeg",
-      "publishedAt": "2025-11-29T15:02:01Z"
+      "name": "prak1234",
+      "email": "prak1234@gmail.com",
+      "password": "prak1234",
+      "_id": 1
     },
     {
-      "_id": "a218c7e9-8a28-4db5-9670-dd7cb9c74df6",
-      "keyword": "Tree",
+      "name": "prak2345",
+      "email": "prak2345@gmail.com",
+      "password": "prak2345",
+      "_id": 2
+    },
+    {
+      "name": "prak123",
+      "email": "prak123@gmail.com",
+      "password": "prak123",
+      "_id": 3
+    }
+  ],
+  "saved": [
+    {
+      "_id": "ed740e69-b52d-4c85-900d-5a4fa44f6f43",
+      "keyword": "Ipl",
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "author": "News Agencies",
+      "title": "Suryakumar and Gill backed to regain India mojo for T20 World Cup",
+      "description": "India will defend their T20 World Cup title at the 2026 edition starting February, but form eludes captain and deputy.",
+      "content": "India Twenty20 captain Suryakumar Yadav and his deputy Shubman Gill continued their run drought, but the team management has backed the duo to regain their form before the home World Cup early next y… [+1728 chars]",
+      "url": "https://www.aljazeera.com/sports/2025/12/12/suryakumar-and-gill-backed-to-regain-india-mojo-for-t20-world-cup",
+      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2025/12/2025-09-10T163043Z_762275360_UP1EL9A19V6LP_RTRMADP_3_CRICKET-ASIACUP-ARE-IND-1765550461.jpg?resize=1920%2C1440",
+      "publishedAt": "2025-12-12T15:00:07Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "04bb08d1-9e80-48bd-982c-bc2e0eba2535",
+      "keyword": "Virat Kohli",
+      "source": {
+        "id": null,
+        "name": "The Indian Express"
+      },
+      "author": "Venkata Krishna B",
+      "title": "India vs South Africa: With runs, guidance and star power, Virat Kohli and Rohit Sharma answer every doubt about their spots for foreseeable future",
+      "description": "IND vs SA: Not only did Rohit Sharma and Virat Kohli score heavily in the three games, but their contribution and helpful inputs that resulted in wickets couldn’t be missed on the field either",
+      "content": "The ODI series that began with plenty of uncertainty around Rohit Sharma and Virat Kohli ended with all smiles and a bonhomie that was hard to miss.At the team hotel, after cutting a cake on arrival,… [+4834 chars]",
+      "url": "https://indianexpress.com/article/sports/cricket/ind-vs-sa-odis-rohit-sharma-virat-kohli-answer-doubts-guidance-star-power-10407408/",
+      "urlToImage": "https://images.indianexpress.com/2025/12/ind-vs-sa-kohli-rohit.jpg",
+      "publishedAt": "2025-12-07T09:36:31Z",
+      "savedBy": 2
+    },
+    {
+      "_id": "b33c0fe4-995d-48e5-8a9e-8c583aaad383",
+      "keyword": "Christmas",
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Ellyn Lapointe",
+      "title": "Dreaming of a White Christmas? Don’t Hold Your Breath",
+      "description": "After a very cold and snowy start to December, temperatures will shift toward unseasonable warmth just in time for Christmas.",
+      "content": "A fast-moving winter storm blanketed much of the Northeast in white this weekend, bringing the first significant snowfall of the season to New York City, Boston, and Philadelphia. If the wintry scene… [+3165 chars]",
+      "url": "https://gizmodo.com/dreaming-of-a-white-christmas-dont-hold-your-breath-2000699726",
+      "urlToImage": "https://gizmodo.com/app/uploads/2025/12/snowy-trees-1200x675.jpg",
+      "publishedAt": "2025-12-15T17:05:16Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "7d35130a-9d35-48ed-b6b5-9ccd49641036",
+      "keyword": "Christmas",
       "source": {
         "id": null,
         "name": "BBC News"
       },
       "author": "Unknown",
-      "title": "Men arrested after village Christmas tree cut down",
-      "description": "Police say they are in the process of charging one man with criminal damage after the tree was felled.",
-      "content": "Two men have been arrested after a Christmas tree which has stood in a village for more than 10 years was cut down, hours after its lights were switched on.\r\nThe tree, in Shotton Colliery, County Dur… [+657 chars]",
-      "url": "https://www.bbc.com/news/articles/c62nnpez1l4o",
-      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/176e/live/e2716fd0-d800-11f0-909c-c78234d2d074.png",
-      "publishedAt": "2025-12-13T09:10:48Z"
-    },
-    {
-      "_id": "6a8b8a2f-9ec6-4ead-9cfd-4db11693ecef",
-      "keyword": "Stranger Things",
-      "source": {
-        "id": null,
-        "name": "Gizmodo.com"
-      },
-      "author": "Sabina Graves",
-      "title": "The Duffers Reveal the Next ‘Stranger Things’ Episode Titles and Directors",
-      "description": "The hit Netflix series returns on December 25 with three more episodes, leading into the big series finale on December 31.",
-      "content": "On Instagram, Ross Duffer revealed a tiny bit more about the next drop of Stranger Things season five episodes coming to Netflix this Christmas.\r\n“Chapters Five, Six and Seven: locked, mixed, scored,… [+1624 chars]",
-      "url": "https://gizmodo.com/the-duffers-reveal-the-next-stranger-things-episode-titles-and-directors-2000698801",
-      "urlToImage": "https://gizmodo.com/app/uploads/2025/12/Stranger-Things-vol-2-netflix-1200x675.jpg",
-      "publishedAt": "2025-12-12T12:00:17Z"
+      "title": "Is it too early to put your Christmas tree up?",
+      "description": "When you should you decorate for Christmas – and how to keep your tree looking good until the big day.",
+      "content": "Annabel Rackham &amp; Emily Holt\r\nThe lights are up and the baubles are out: with trees across the country already decorated and on display, there has been some traditional grumbling about whether co… [+4779 chars]",
+      "url": "https://www.bbc.com/news/articles/cm28y24l9dvo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/5159/live/84cb98e0-cec5-11f0-81f3-a1b2f542a1e8.jpg",
+      "publishedAt": "2025-12-02T02:05:35Z",
+      "savedBy": 1
     }
   ]
 }

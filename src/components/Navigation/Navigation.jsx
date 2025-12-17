@@ -1,8 +1,11 @@
 import { NavLink, useLocation } from "react-router-dom";
+import { useContext } from "react";
 import logoutIcon from "../../assets/logout.svg";
 import "./Navigation.css";
+import CurrentUserContext from "../../contexts/CurrentUserContext";
 
 function Navigation({ handleLogin, handleSignOut, isLoggedIn }) {
+  const currentUser = useContext(CurrentUserContext);
   const location = useLocation();
   const isSavedRoute = location.pathname === "/saved-news";
 
@@ -28,7 +31,8 @@ function Navigation({ handleLogin, handleSignOut, isLoggedIn }) {
             }`}
             onClick={handleSignOut}
           >
-            <span className="navigation__logout-text">Elisa</span>
+            <span className="navigation__logout-text">{currentUser.name}</span>
+
             <img
               src={logoutIcon}
               alt="Log out"

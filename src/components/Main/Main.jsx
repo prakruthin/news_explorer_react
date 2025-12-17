@@ -14,6 +14,7 @@ function Main({
   setSearchKeyword,
   isMainRoute,
   savedNews,
+  onRegisterModalSubmit,
 }) {
   const [newsArticles, setNewsArticles] = useState([]);
   return (
@@ -24,6 +25,8 @@ function Main({
           handleLogin={handleLogin}
           handleSignOut={handleSignOut}
           isLoggedIn={isLoggedIn}
+          isMainRoute={isMainRoute}
+          onRegisterModalSubmit={onRegisterModalSubmit}
         />
         <SearchForm
           setNewsArticles={setNewsArticles}

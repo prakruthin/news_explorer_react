@@ -73,3 +73,11 @@
   line-height: 24px;
   font-weight: 500;
 }
+
+.search-form__btn:hover {
+  background-color: #347eff;
+}
+
+.search-form__btn:active {
+  background-color: #2a65cc;
+}

@@ -9,12 +9,14 @@ function Main({
   handleLogin,
   handleSignOut,
   isLoggedIn,
-  onCardBookmark,
   searchKeyword,
   setSearchKeyword,
   isMainRoute,
   savedNews,
   onRegisterModalSubmit,
+  onToggleBookmark,
+  setIsLoading,
+  isLoading,
 }) {
   const [newsArticles, setNewsArticles] = useState([]);
   return (
@@ -31,14 +33,17 @@ function Main({
         <SearchForm
           setNewsArticles={setNewsArticles}
           setSearchKeyword={setSearchKeyword}
+          setIsLoading={setIsLoading}
         />
         {newsArticles.length > 0 && (
           <SearchResults
+            isLoggedIn={isLoggedIn}
             newsArticles={newsArticles}
             searchKeyword={searchKeyword}
-            onCardBookmark={onCardBookmark}
             isMainRoute={isMainRoute}
             savedNews={savedNews}
+            onToggleBookmark={onToggleBookmark}
+            isLoading={isLoading}
           />
         )}
         <About />

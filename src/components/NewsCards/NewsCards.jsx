@@ -6,21 +6,25 @@ import { useContext } from "react";
 function NewsCards({
   item,
   searchKeyword,
-  onCardBookmark,
   isMainRoute,
   onCardBookmarkDelete,
   savedNews,
+  onToggleBookmark,
+  isLoggedIn,
 }) {
   const currentUser = useContext(CurrentUserContext);
-  const handleSaveArticle = () => {
-    onCardBookmark({
-      ...item,
-      keyword: searchKeyword,
-      savedBy: currentUser._id,
-    });
-  };
   const isArticleSaved = (article) =>
     savedNews.some((saved) => saved.url === article.url);
+
+  const itemWithMeta = {
+    ...item,
+    keyword: searchKeyword,
+    savedBy: currentUser._id,
+  };
+  const handleBookmarkClick = () => {
+    if (!isLoggedIn) return;
+    onToggleBookmark(itemWithMeta);
+  };
 
   return (
     <li className="card">
@@ -31,28 +35,38 @@ function NewsCards({
         onClick={() => window.open(item.url, "_blank")}
         style={{ cursor: "pointer" }}
       />
+
       {isMainRoute ? (
-        <button
-          type="button"
-          className="card__bookmark-btn card__bookmark-btn_bookmarked"
-          onClick={handleSaveArticle}
-        >
-          <svg
-            className={`card__bookmark-icon ${
-              isArticleSaved(item) ? "card__bookmark-icon_bookmarked" : ""
-            }`}
-          />{" "}
-        </button>
+        <div className="card__text-wrapper">
+          {!isLoggedIn && (
+            <span className="card__tooltip">Sign in to save articles</span>
+          )}
+
+          <button
+            type="button"
+            className="card__bookmark-btn card__bookmark-btn_bookmarked"
+            onClick={handleBookmarkClick}
+          >
+            <svg
+              className={`card__bookmark-icon ${
+                isArticleSaved(item) ? "card__bookmark-icon_bookmarked" : ""
+              }`}
+            />{" "}
+          </button>
+        </div>
       ) : (
         <div>
           <p className="card__keyword">{item.keyword}</p>
-          <button
-            type="button"
-            className="card__delete-btn"
-            onClick={() => onCardBookmarkDelete(item)}
-          >
-            <svg className="card__delete-icon" />
-          </button>
+          <div className="card__text-wrapper">
+            <span className="card__tooltip">Remove from saved</span>
+            <button
+              type="button"
+              className="card__delete-btn"
+              onClick={() => onCardBookmarkDelete(item)}
+            >
+              <svg className="card__delete-icon" />
+            </button>
+          </div>
         </div>
       )}
 

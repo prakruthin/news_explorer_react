@@ -13,6 +13,7 @@ import ProtectedRoute from "../../ProtectedRoute/ProtectedRoute.jsx";
 import { getSaved, addSaved, deleteSaved } from "../../utils/api.js";
 import { register, authorize } from "../../utils/auth.js";
 import { setToken, removeToken } from "../../utils/token.js";
+import RegisterSuccessModal from "../RegisterSuccessModal/RegisterSuccessModal.jsx";
 
 function App() {
   const [activeModal, setActiveModal] = useState("");
@@ -34,6 +35,10 @@ function App() {
     setActiveModal("login-form");
   };
 
+  const handleSuccess = () => {
+    setActiveModal("register-success");
+  };
+
   const closeActiveModal = () => {
     setActiveModal("");
   };
@@ -41,7 +46,6 @@ function App() {
   function handleSubmit(request) {
     setIsLoading(true);
     request()
-      .then(() => closeActiveModal())
       .catch((err) => console.error("Error:", err))
       .finally(() => setIsLoading(false));
   }
@@ -60,6 +64,7 @@ function App() {
 
         setCurrentUser(user);
         setIsLoggedIn(true);
+        closeActiveModal();
         navigate("/");
       });
     }
@@ -68,20 +73,11 @@ function App() {
 
   const handleRegisterModalSubmit = ({ email, password, name }) => {
     function makeRequest() {
-      return register({ email, password, name })
-        .then(() => {
-          return authorize({ email, password });
-        })
-        .then((user) => {
-          const fakeToken = generateFakeToken();
-
-          setToken(fakeToken);
-          localStorage.setItem("user", JSON.stringify(user));
-          setCurrentUser(user);
-          setIsLoggedIn(true);
-          navigate("/");
-        });
+      return register({ email, password, name }).then(() => {
+        setActiveModal("register-success");
+      });
     }
+
     handleSubmit(makeRequest);
   };
 
@@ -115,6 +111,16 @@ function App() {
       .catch((err) => {
         console.error("Error deleting article:", err);
       });
+  };
+
+  const toggleBookmark = (item) => {
+    const savedArticle = savedNews.find((saved) => saved.url === item.url);
+
+    if (savedArticle) {
+      return handleCardBookmarkDelete(savedArticle);
+    }
+
+    return handleCardBookmark(item);
   };
 
   useEffect(() => {
@@ -164,11 +170,13 @@ function App() {
                   handleSignOut={handleSignOut}
                   isLoggedIn={isLoggedIn}
                   isMainRoute={true}
-                  onCardBookmark={handleCardBookmark}
                   searchKeyword={searchKeyword}
                   setSearchKeyword={setSearchKeyword}
                   savedNews={savedNews}
                   onRegisterModalSubmit={handleRegisterModalSubmit}
+                  onToggleBookmark={toggleBookmark}
+                  setIsLoading={setIsLoading}
+                  isLoading={isLoading}
                 />
               }
             />
@@ -204,6 +212,12 @@ function App() {
           onLoginModalSubmit={handleLoginModalSubmit}
           onSwitchForm={handleSignup}
           isLoading={isLoading}
+        />
+        <RegisterSuccessModal
+          onClose={closeActiveModal}
+          isOpen={activeModal === "register-success"}
+          handleSuccess={handleSuccess}
+          handleLogin={handleLogin}
         />
       </div>
     </CurrentUserContext.Provider>

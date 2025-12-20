@@ -1,16 +1,22 @@
 import { useState } from "react";
 import NewsCards from "../NewsCards/NewsCards";
+import Preloader from "../Preloader/Preloader";
 import "./SearchResults.css";
 
 function SearchResults({
   newsArticles,
-  onCardBookmark,
   searchKeyword,
   isMainRoute,
   savedNews,
+  onToggleBookmark,
+  isLoading,
+  isLoggedIn,
 }) {
   const [visibleCount, setVisibleCount] = useState(3);
 
+  if (isLoading) {
+    return <Preloader />;
+  }
   if (!newsArticles || newsArticles.length === 0) {
     <p className="search-results__empty">No articles found</p>;
   }
@@ -31,16 +37,17 @@ function SearchResults({
               key={item.url}
               item={item}
               searchKeyword={searchKeyword}
-              onCardBookmark={onCardBookmark}
               isMainRoute={isMainRoute}
               savedNews={savedNews}
+              onToggleBookmark={onToggleBookmark}
+              isLoggedIn={isLoggedIn}
             />
           );
         })}
       </ul>
       {visibleCount < newsArticles.length && (
         <button className="search-results__load-more" onClick={handleLoadMore}>
-          See More
+          Show More
         </button>
       )}
     </div>

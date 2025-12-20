@@ -17,25 +17,45 @@
       "email": "prak123@gmail.com",
       "password": "prak123",
       "_id": 3
+    },
+    {
+      "name": "prak999",
+      "email": "prak999@gmail.com",
+      "password": "prak999",
+      "_id": 4
+    },
+    {
+      "name": "prak99",
+      "email": "prak99@gmail.com",
+      "password": "prak99",
+      "_id": 5
+    },
+    {
+      "name": "prak00",
+      "email": "prak00@gmail.com",
+      "password": "prak00",
+      "_id": 6
+    },
+    {
+      "name": "prak000",
+      "email": "prak000@gmail.com",
+      "password": "prak000",
+      "_id": 7
+    },
+    {
+      "name": "prak111",
+      "email": "prak111@gmail.com",
+      "password": "prak111",
+      "_id": 8
+    },
+    {
+      "name": "sha123",
+      "email": "sha123@gmail.com",
+      "password": "sha123",
+      "_id": 9
     }
   ],
   "saved": [
-    {
-      "_id": "ed740e69-b52d-4c85-900d-5a4fa44f6f43",
-      "keyword": "Ipl",
-      "source": {
-        "id": "al-jazeera-english",
-        "name": "Al Jazeera English"
-      },
-      "author": "News Agencies",
-      "title": "Suryakumar and Gill backed to regain India mojo for T20 World Cup",
-      "description": "India will defend their T20 World Cup title at the 2026 edition starting February, but form eludes captain and deputy.",
-      "content": "India Twenty20 captain Suryakumar Yadav and his deputy Shubman Gill continued their run drought, but the team management has backed the duo to regain their form before the home World Cup early next y… [+1728 chars]",
-      "url": "https://www.aljazeera.com/sports/2025/12/12/suryakumar-and-gill-backed-to-regain-india-mojo-for-t20-world-cup",
-      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2025/12/2025-09-10T163043Z_762275360_UP1EL9A19V6LP_RTRMADP_3_CRICKET-ASIACUP-ARE-IND-1765550461.jpg?resize=1920%2C1440",
-      "publishedAt": "2025-12-12T15:00:07Z",
-      "savedBy": 1
-    },
     {
       "_id": "04bb08d1-9e80-48bd-982c-bc2e0eba2535",
       "keyword": "Virat Kohli",
@@ -82,6 +102,70 @@
       "url": "https://www.bbc.com/news/articles/cm28y24l9dvo",
       "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/5159/live/84cb98e0-cec5-11f0-81f3-a1b2f542a1e8.jpg",
       "publishedAt": "2025-12-02T02:05:35Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "10a958a5-4194-43e8-9f17-17b848b16370",
+      "keyword": "Alexa",
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Jennifer Pattison Tuohy",
+      "title": "Alexa Plus’s website is live for some users",
+      "description": "The Alexa.com website appears to be live for some users. The browser-based home for Alexa Plus, the company's revamped digital voice assistant, was first announced at the Alexa Plus launch event in February. But until recently, Alexa.com redirected to an info…",
+      "content": "<ul><li></li><li></li><li></li></ul>\r\nAmazons AI-powered voice assistant has a new home on the web.\r\nAmazons AI-powered voice assistant has a new home on the web.\r\nby\r\nJennifer Pattison TuohyClose\r\nJ… [+4219 chars]",
+      "url": "https://www.theverge.com/news/845678/alexa-dot-com-alexa-plus-website-live",
+      "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/12/Screenshot-2025-12-16-at-9.00.12%E2%80%AFAM.png?quality=90&strip=all&crop=0,34.601780904843,100,64.463751775413",
+      "publishedAt": "2025-12-16T23:16:03Z",
+      "savedBy": 3
+    },
+    {
+      "_id": "154f3b90-ae4c-4f5a-a9b5-66a875c97a29",
+      "keyword": "Jaipur",
+      "source": {
+        "id": null,
+        "name": "Skift"
+      },
+      "author": "Bulbul Dhawan",
+      "title": "India’s $72 Billion Wedding Season Is Reshaping Travel, Again",
+      "description": "With every passing year, the budgets for Indian weddings are increasing as couples seek to make their big day more aligned to their personal tastes. Hotels, villas, palaces - all stand to benefit.",
+      "content": "India's annual wedding rush is back. Over the 45-day window beginning November 1, the country expects 460,000 weddings, and an estimated INR 6.5 trillion ($72.3 billion) in spending, according to Ind… [+766 chars]",
+      "url": "https://skift.com/2025/12/10/indias-72-billion-wedding-season-is-reshaping-travel-again/",
+      "urlToImage": "https://skift.com/wp-content/uploads/2024/11/Indian-wedding-amish-thakkar-1rLF6hxmm7M-unsplash.jpg?resize=1024,683",
+      "publishedAt": "2025-12-11T04:00:00Z",
+      "savedBy": 3
+    },
+    {
+      "_id": "c066eac6-d614-46bb-84d5-4f83b3bfc8d9",
+      "keyword": "Zootopia",
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Justin Carter",
+      "title": "‘Zootopia 2’ Makessssss a Lot of Thanksgiving Weekend Money",
+      "description": "Thanks to the holiday weekend and plenty of promo, a looooot of people went to see 'Zootopia 2.",
+      "content": "Disney put Zootopia 2 out in theaters before Thanksgiving weekend and shocker, it conquered the holiday in less than a week.\r\nPer the Hollywood Reporter, the animated sequel has made $556 million wor… [+1763 chars]",
+      "url": "https://gizmodo.com/zootopia-2-is-going-to-be-another-big-disney-hit-2000693770",
+      "urlToImage": "https://gizmodo.com/app/uploads/2025/07/ZOOTOPIA-2-Ginnifer-Goodwin-Jason-Bateman-Disney-1200x675.jpg",
+      "publishedAt": "2025-12-01T12:00:26Z",
+      "savedBy": 3
+    },
+    {
+      "_id": "caebdba5-ac50-4256-a3da-cea1733e4af5",
+      "keyword": "Photography",
+      "source": {
+        "id": "new-scientist",
+        "name": "New Scientist"
+      },
+      "author": "Alex Wilkins",
+      "title": "'Horrific and beautiful' whale rescue image wins photography prize",
+      "description": "See some of the winning entries for this year's Oceania Photo Contest, including Miesa Grobbelaar's shot of a whale, which took the top prize",
+      "content": "Tauhi, Miesa Grobbelaar’s winning photo\r\nMiesa Grobbelaar/TNC 2025 Oceania Photo Contest\r\nJust moments after Miesa Grobbelaar photographed this endangered humpback whale being freed from a chain, the… [+2416 chars]",
+      "url": "https://www.newscientist.com/article/2504831-horrific-and-beautiful-whale-rescue-image-wins-photography-prize/",
+      "urlToImage": "https://images.newscientist.com/wp-content/uploads/2025/11/18130805/sei274675219.jpg",
+      "publishedAt": "2025-11-25T12:00:24Z",
       "savedBy": 1
     }
   ]

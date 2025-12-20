@@ -2,7 +2,7 @@ import "./SearchForm.css";
 import { useState } from "react";
 import { getNews, filterNewsData } from "../../utils/newsApi";
 
-function SearchForm({ setNewsArticles, setSearchKeyword }) {
+function SearchForm({ setNewsArticles, setSearchKeyword, setIsLoading }) {
   const [data, setData] = useState({ query: "" });
   const [error, setError] = useState(null);
 
@@ -18,6 +18,7 @@ function SearchForm({ setNewsArticles, setSearchKeyword }) {
     if (!data.query.trim()) return;
 
     setSearchKeyword(data.query);
+    setIsLoading(true);
 
     getNews(data.query)
       .then((res) => {
@@ -29,6 +30,9 @@ function SearchForm({ setNewsArticles, setSearchKeyword }) {
       .catch((err) => {
         console.error(err);
         setError("Something went wrong. Please try again.");
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 

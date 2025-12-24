@@ -19,3 +19,18 @@
   background-repeat: no-repeat;
   z-index: 0;
 }
+
+@media screen and (max-width: 850px) {
+  .main__background {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  /* .main {
+    position: relative;
+  } */
+  .main__background {
+    height: 536px;
+  }
+}

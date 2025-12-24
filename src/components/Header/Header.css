@@ -39,3 +39,19 @@
 .header_theme_light .header__logo {
   color: #1a1b22;
 }
+
+@media screen and (max-width: 850px) {
+  .header__container {
+    padding: 13px 40px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .header__container {
+    padding: 16px;
+    position: relative;
+  }
+  .header__logo {
+    font-size: 14px;
+  }
+}

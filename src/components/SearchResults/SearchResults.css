@@ -45,3 +45,35 @@
 .search-results__load-more:hover {
   background-color: #e8e8e8;
 }
+
+@media screen and (max-width: 850px) {
+  .search-results {
+    padding: 40px;
+  }
+  .search-results__heading {
+    font-size: 30px;
+    line-height: 34px;
+    padding: 0 0 32px;
+  }
+  .cards__list {
+    grid-template-columns: repeat(auto-fit, 224px);
+    gap: 8px;
+  }
+  .search-results__load-more {
+    max-width: 240px;
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width: 585px) {
+  .search-results {
+    padding: 32px 16px 24px;
+  }
+  .search-results__heading {
+    padding: 0 0 58px;
+  }
+  .cards__list {
+    grid-template-columns: repeat(auto-fit, 288px);
+    gap: 10px;
+    flex-direction: column;
+  }
+}

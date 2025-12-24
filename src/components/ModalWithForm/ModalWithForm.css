@@ -58,7 +58,7 @@
 .modal__form {
   display: flex;
   flex-direction: column;
-  gap: 39px;
+  gap: 21px;
 }
 
 .modal__form-container {
@@ -163,4 +163,21 @@
 .modal__error_visible {
   visibility: visible;
   opacity: 1;
+}
+
+@media screen and (max-width: 585px) {
+  .modal__content {
+    position: absolute;
+    top: 56px;
+    height: 100%;
+  }
+  .modal__close-btn {
+    /* height: 40px; */
+    top: -40px;
+    right: 16px;
+  }
+  .modal__close-icon {
+    height: 24px;
+    width: 24px;
+  }
 }

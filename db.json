@@ -167,6 +167,86 @@
       "urlToImage": "https://images.newscientist.com/wp-content/uploads/2025/11/18130805/sei274675219.jpg",
       "publishedAt": "2025-11-25T12:00:24Z",
       "savedBy": 1
+    },
+    {
+      "_id": "c2f48262-acd6-4901-880f-9744d549938b",
+      "keyword": "tree",
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Ellyn Lapointe",
+      "title": "The Amazon Is Morphing Into a ‘Hypertropical’ Climate—and It’s as Apocalyptic as It Sounds",
+      "description": "A new study predicts that by 2100, the Amazon rainforest could experience up to 150 days of hot drought conditions each year, causing mass tree die-offs.",
+      "content": "When it comes to regulating Earths climate, few ecosystems play a more important role than the Amazon rainforest. But what happens when global warming dramatically alters the Amazons climate?\r\nA stud… [+3943 chars]",
+      "url": "https://gizmodo.com/the-amazon-is-morphing-into-a-hypertropical-climate-and-its-as-apocalyptic-as-it-sounds-2000698491",
+      "urlToImage": "https://gizmodo.com/app/uploads/2025/12/Amazon-rainforest-drought-1200x675.jpg",
+      "publishedAt": "2025-12-11T16:50:23Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "39ec17cd-b922-4ded-9890-3e122e3757a3",
+      "keyword": "stranger things",
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Germain Lussier",
+      "title": "The 4 ‘Stranger Things’ Episodes the Duffers Suggest You Rewatch",
+      "description": "'Stranger Things 5' is out this week on Netflix, so your window to prepare is dwindling.",
+      "content": "It’s been a long, long wait, but the fifth and final season of Stranger Things is almost here. Stranger Things season five debuts on Wednesday evening with four episodes making up the first of three … [+2597 chars]",
+      "url": "https://gizmodo.com/four-key-stranger-things-rewatch-episodes-netflix-2000690814",
+      "urlToImage": "https://gizmodo.com/app/uploads/2025/11/Stranger-Things-5-group-hole-1200x675.jpg",
+      "publishedAt": "2025-11-24T22:00:24Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "ae4f5061-df0f-46d4-8b13-0f2deb5a4cf9",
+      "keyword": "forest",
+      "source": {
+        "id": null,
+        "name": "Popular Mechanics"
+      },
+      "author": "Tim Newcomb",
+      "title": "Archaeologists Were Searching a Forest in the Clouds—and Found 100 Structures From an Ancient City",
+      "description": "Experts now hope to share the story of the site with as many people as possible.",
+      "content": "Heres what youll learn when you read this story:\r\n<ul><li>Archaeologists with the World Monuments Fund uncovered over 100 previously unknown archaeological structures in Perus Rio Abiseo National Par… [+4065 chars]",
+      "url": "https://www.popularmechanics.com/science/archaeology/a69607175/ancient-city-cloud-forest-1764692282/",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/Wa6KzbexoljvXdJDukOBGg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU7Y2Y9d2VicA--/https://media.zenfs.com/en/popular_mechanics_642/2a82bb96a893e3a92a8948bc8ef46e0a",
+      "publishedAt": "2025-12-02T16:21:00Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "b1a21e5b-1a41-41e4-a8e2-74e9526e3f24",
+      "keyword": "photography",
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Andrew Liszewski",
+      "title": "The Kodak Snapic A1 is a $99 film camera that makes double exposures easy",
+      "description": "Reto, a Hong Kong-based camera maker that licenses the Kodak brand, has announced a new 35mm film camera called the Snapic A1 that ships next week. Although its design, with either a rhino gray or ivory white plastic housing, gives off disposable camera vibes…",
+      "content": "<ul><li></li><li></li><li></li></ul>\r\nThe affordable shooter uses a three-element glass lens with two focus zones for portrait or landscape photography.\r\nThe affordable shooter uses a three-element g… [+2775 chars]",
+      "url": "https://www.theverge.com/news/828648/reto-kodak-snapic-a1-35mm-film-camera-double-exposure",
+      "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/11/kodak_snapic_1.jpg?quality=90&strip=all&crop=0%2C10.743900894725%2C100%2C78.512198210551&w=1200",
+      "publishedAt": "2025-11-25T15:40:04Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "c5bf5d65-6759-4792-98cc-c143db44a494",
+      "keyword": "photography",
+      "source": {
+        "id": null,
+        "name": "Android Central"
+      },
+      "author": "nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz",
+      "title": "Samsung might bring an old but gold camera feature back in a future Galaxy S",
+      "description": "Samsung was rumored to consider returning a key photography feature to an unknown future Galaxy S series.",
+      "content": "What you need to know\r\n<ul><li>Recent Samsung rumors claim the company may reach back for an old dual aperture camera feature for a future Galaxy S phone series.</li><li>A tipster on Chinese social m… [+3102 chars]",
+      "url": "https://www.androidcentral.com/phones/samsung-galaxy/samsung-might-bring-an-old-but-gold-camera-feature-back-in-a-future-galaxy-s",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/Xx9xGAMaQd25QDEJtPLXWK-2500-80.jpg",
+      "publishedAt": "2025-12-17T21:04:20Z",
+      "savedBy": 1
     }
   ]
 }

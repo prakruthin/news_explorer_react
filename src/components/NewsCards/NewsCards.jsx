@@ -33,7 +33,6 @@ function NewsCards({
         src={item.urlToImage || "/images/news-placeholder.png"}
         alt={item.title || "News image"}
         onClick={() => window.open(item.url, "_blank")}
-        style={{ cursor: "pointer" }}
       />
 
       {isMainRoute ? (

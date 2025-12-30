@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 
 import CurrentUserContext from "../../contexts/CurrentUserContext.js";
 
 import "./App.css";
+import Header from "../Header/Header.jsx";
 import Main from "../Main/Main";
 import Saved from "../Saved/Saved";
 import Footer from "../Footer/Footer";
@@ -22,6 +23,9 @@ function App() {
   const [savedNews, setSavedNews] = useState([]);
   const [searchKeyword, setSearchKeyword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
+  const location = useLocation();
+  const isMainRoute = location.pathname === "/";
 
   const navigate = useNavigate();
 
@@ -161,19 +165,23 @@ function App() {
     <CurrentUserContext.Provider value={currentUser}>
       <div className="page">
         <div className="page__content">
+          <Header
+            handleLogin={handleLogin}
+            handleSignOut={handleSignOut}
+            isLoggedIn={isLoggedIn}
+            isMainRoute={isMainRoute}
+            onRegisterModalSubmit={handleRegisterModalSubmit}
+          />
           <Routes>
             <Route
               path="/"
               element={
                 <Main
-                  handleLogin={handleLogin}
-                  handleSignOut={handleSignOut}
                   isLoggedIn={isLoggedIn}
-                  isMainRoute={true}
+                  isMainRoute={isMainRoute}
                   searchKeyword={searchKeyword}
                   setSearchKeyword={setSearchKeyword}
                   savedNews={savedNews}
-                  onRegisterModalSubmit={handleRegisterModalSubmit}
                   onToggleBookmark={toggleBookmark}
                   setIsLoading={setIsLoading}
                   isLoading={isLoading}
@@ -186,9 +194,8 @@ function App() {
                 <ProtectedRoute
                   element={Saved}
                   isLoggedIn={isLoggedIn}
-                  handleSignOut={handleSignOut}
                   savedNews={savedNews}
-                  isMainRoute={false}
+                  isMainRoute={isMainRoute}
                   searchKeyword={searchKeyword}
                   onCardBookmarkDelete={handleCardBookmarkDelete}
                 />

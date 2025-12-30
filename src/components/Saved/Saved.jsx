@@ -1,16 +1,8 @@
 import "./Saved.css";
-import Header from "../Header/Header";
 import NewsCards from "../NewsCards/NewsCards";
 import CurrentUserContext from "../../contexts/CurrentUserContext";
 import { useContext } from "react";
-function Saved({
-  handleLogin,
-  handleSignOut,
-  isLoggedIn,
-  savedNews,
-  isMainRoute,
-  onCardBookmarkDelete,
-}) {
+function Saved({ savedNews, isMainRoute, onCardBookmarkDelete }) {
   const currentUser = useContext(CurrentUserContext);
   const userSavedNews = savedNews.filter(
     (item) => item.savedBy === currentUser._id
@@ -37,13 +29,6 @@ function Saved({
 
   return (
     <div>
-      <Header
-        handleLogin={handleLogin}
-        isLoggedIn={isLoggedIn}
-        isMainRoute={isMainRoute}
-        handleSignOut={handleSignOut}
-      />
-
       <div className="saved__container">
         <p className="saved__name">Saved articles</p>
         <h2 className="saved__heading">

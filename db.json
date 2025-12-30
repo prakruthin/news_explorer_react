@@ -53,6 +53,12 @@
       "email": "sha123@gmail.com",
       "password": "sha123",
       "_id": 9
+    },
+    {
+      "name": "TestUser",
+      "email": "testuser1234@gmail.com",
+      "password": "test1234",
+      "_id": 10
     }
   ],
   "saved": [
@@ -247,6 +253,86 @@
       "urlToImage": "https://cdn.mos.cms.futurecdn.net/Xx9xGAMaQd25QDEJtPLXWK-2500-80.jpg",
       "publishedAt": "2025-12-17T21:04:20Z",
       "savedBy": 1
+    },
+    {
+      "_id": "bc46f7c8-cb5f-4c96-95c4-d600240ed3be",
+      "keyword": "chatgpt",
+      "source": {
+        "id": "wired",
+        "name": "Wired"
+      },
+      "author": "Maxwell Zeff",
+      "title": "OpenAI Launches GPT-5.2 as It Navigates ‘Code Red’",
+      "description": "The ChatGPT-maker is releasing its “best model yet” as it faces new pressures from Google and other AI competitors.",
+      "content": "OpenAI has introduced GPT-5.2, its smartest artificial intelligence model yet, with performance gains across writing, coding, and reasoning benchmarks. The launch comes just days after CEO Sam Altman… [+2477 chars]",
+      "url": "https://www.wired.com/story/openai-gpt-launch-gemini-code-red/",
+      "urlToImage": "https://media.wired.com/photos/6939fd17eaa4088bd3b69c9f/191:100/w_1280,c_limit/GettyImages-2249343616.jpg",
+      "publishedAt": "2025-12-11T18:00:00Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "5bc89b9b-6930-4065-be9a-9c274a9b3f8e",
+      "keyword": "GPT",
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Hayden Field",
+      "title": "OpenAI calls GPT-5.2 the best model yet for professionals",
+      "description": "GPT-5.2 is here, and with it, OpenAI wants \"to unlock even more economic value for people,\" Fidji Simo, the company's CEO of Applications, told reporters in a Thursday briefing. She said it's been in the works for \"many, many months.\" The company calls GPT-5.…",
+      "content": "<ul><li></li><li></li><li></li></ul>\r\nAccording to OpenAI, its new model hallucinates less and is more accurate than GPT-5.1.\r\nAccording to OpenAI, its new model hallucinates less and is more accurat… [+5089 chars]",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/842529/openai-gpt-5-2-new-model-chatgpt",
+      "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK201_SAM_ALTMAN_CVIRGINIA_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "publishedAt": "2025-12-11T18:02:52Z",
+      "savedBy": 10
+    },
+    {
+      "_id": "191ef319-e1d6-4b92-83b2-dd1573311be8",
+      "keyword": "Dubai",
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Selima Hussain,Tyler Merkel,Havovi Cooper",
+      "title": "Inside the Dubai chocolate boom and the factories racing to keep up",
+      "description": "We visited the creator of Dubai chocolate and its first industrial operation and traced how the supply chain is racing to meet soaring demand.",
+      "content": "Whether it's local bakeries or big chocolatiers, there's a version of Dubai chocolate just about everywhere. So how did this dessert become a viral sensation, and how are businesses around the world … [+68 chars]",
+      "url": "https://www.businessinsider.com/inside-dubai-chocolate-boom-and-factories-racing-to-keep-up-2025-12",
+      "urlToImage": "https://i.insider.com/6945c0a564858d02d21730e3?width=1200&format=jpeg",
+      "publishedAt": "2025-12-21T17:00:01Z",
+      "savedBy": 10
+    },
+    {
+      "_id": "a4c45d7d-2498-42e1-9c8f-1b535760fe4a",
+      "keyword": "Dubai",
+      "source": {
+        "id": null,
+        "name": "Dezeen"
+      },
+      "author": "Francesca Tesler",
+      "title": "Designing in Dubai is like \"working with wet clay\" says panel at Gaggenau Dubai",
+      "description": "Dubai offers designers the opportunity to \"innovate, fail fast, move on again,\" according to speakers at a talk hosted by Dezeen and kitchen appliances brand Gaggenau. Read more",
+      "content": "Dubai offers designers the opportunity to \"innovate, fail fast, move on again,\" according to speakers at a talk hosted by Dezeen and kitchen appliances brand Gaggenau.\r\nDezeen teamed up with the bran… [+2857 chars]",
+      "url": "https://www.dezeen.com/2025/12/04/dubai-design-panel-gaggenau/",
+      "urlToImage": "https://static.dezeen.com/uploads/2025/12/GG-4.jpg",
+      "publishedAt": "2025-12-04T08:00:25Z",
+      "savedBy": 10
+    },
+    {
+      "_id": "66f13447-4d4f-48b8-829b-0ef80ffaea93",
+      "keyword": "owala",
+      "source": {
+        "id": null,
+        "name": "disneyfoodblog.com"
+      },
+      "author": "Jaden Green",
+      "title": "The One Water Bottle EVERY Disney World Guest Is Carrying Right Now",
+      "description": "You're going to fall in love with this Disney Princess Owala Collection!",
+      "content": "HYDRATE, HYDRATE, HYDRATE!\r\nOwala FreeSip\r\nThere is one thing that we are constantly reminding our readers — if you’re going to Disney World, you need to make sure you stay hydrated. Drinking water w… [+2615 chars]",
+      "url": "https://www.disneyfoodblog.com/2025/12/09/the-one-water-bottle-every-disney-world-guest-is-carrying-right-now/",
+      "urlToImage": "https://www.disneyfoodblog.com/wp-content/uploads/2025/07/DFB-asset-affiliate-partner-owala-rapunzel-disney-princess-freesip-9-700x525.jpg",
+      "publishedAt": "2025-12-09T21:00:48Z",
+      "savedBy": 10
     }
   ]
 }

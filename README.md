@@ -66,6 +66,15 @@ Supports saving and deleting news articles in the simulated database.
 5. View saved articles in the **Saved News** section.
 6. Open login/register modals to sign in or create an account.
 
+## Test Credentials
+
+You can use the following test account to explore authenticated features such as saving and deleting articles:
+
+- **Email:** testuser1234@gmail.com
+- **Password:** test1234
+
+> These credentials are for demonstration purposes only and work with the simulated backend powered by `json-server`.
+
 ## Screenshots
 
 ### Desktop View

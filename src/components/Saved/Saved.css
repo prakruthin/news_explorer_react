@@ -43,6 +43,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 400px);
   gap: 16px;
+  justify-content: center;
 }
 @media screen and (max-width: 850px) {
   .saved__container {

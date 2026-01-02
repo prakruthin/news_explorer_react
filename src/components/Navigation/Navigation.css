@@ -165,7 +165,7 @@
   .navigation__menu-icon {
     width: 24px;
     height: 24px;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-repeat: no-repeat;
     background-size: cover;
   }

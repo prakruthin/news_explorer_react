@@ -317,6 +317,22 @@
       "urlToImage": "https://www.disneyfoodblog.com/wp-content/uploads/2025/07/DFB-asset-affiliate-partner-owala-rapunzel-disney-princess-freesip-9-700x525.jpg",
       "publishedAt": "2025-12-09T21:00:48Z",
       "savedBy": 10
+    },
+    {
+      "_id": "0016e3f3-cebf-4eeb-86db-3ad73624bef6",
+      "keyword": "stanley",
+      "source": {
+        "id": null,
+        "name": "TheStreet"
+      },
+      "author": "Anand Sinha",
+      "title": "MicroStrategy sends sharp warning letter to MSCI",
+      "description": "Billionaire tech leader Michael Saylor-led Bitcoin (BTC) treasury firm MicroStrategy (Nasdaq: MSTR), now Strategy, has finally written to Morgan Stanley...",
+      "content": "Billionaire tech leader Michael Saylor-led Bitcoin (BTC) treasury firm MicroStrategy (Nasdaq: MSTR), now Strategy, has finally written to Morgan Stanley Capital International (MSCI) over the potentia… [+3949 chars]",
+      "url": "https://www.thestreet.com/crypto/markets/microstrategy-sends-sharp-warning-letter-to-msci",
+      "urlToImage": "https://media.zenfs.com/en/thestreet_881/d1aa5494f6ca9d52fa64ef014153b18a",
+      "publishedAt": "2025-12-10T19:21:04Z",
+      "savedBy": 10
     }
   ]
 }

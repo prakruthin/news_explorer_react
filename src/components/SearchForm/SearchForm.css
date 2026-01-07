@@ -1,0 +1,131 @@
+.search-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form__heading {
+  font-family: RobotoSlab, sans-serif;
+  margin: 0;
+  max-width: 608px;
+  line-height: 64px;
+  font-size: 60px;
+  padding-top: 80px;
+  width: 100%;
+  color: #fff;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+}
+
+.search-form__text {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 32px 0 0;
+  max-width: 608px;
+  width: 100%;
+  margin: 0;
+}
+
+.search-form__search-bar {
+  max-width: 608px;
+  padding: 88px 0 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.search-form__input {
+  width: 100%;
+  height: 64px;
+  border: none;
+  border: 1px #d1d2d6;
+  padding: 21px 208px 21px 24px;
+  border-radius: 100px;
+  border: 1px #d1d2d6 solid;
+  backdrop-filter: blur(8px);
+  box-sizing: border-box;
+}
+
+.search-form__input::placeholder {
+  color: #b6bcbf;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.search-form__btn {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  max-width: 168px;
+  width: 100%;
+  border: none;
+  border-radius: 100px;
+  background-color: #2f71e5;
+  color: #fff;
+  padding: 20px 56px;
+  right: 0px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.search-form__btn:hover {
+  background-color: #347eff;
+}
+
+.search-form__btn:active {
+  background-color: #2a65cc;
+}
+
+@media screen and (max-width: 850px) {
+  .search-form {
+    padding: 0 162px;
+  }
+  .search-form__heading {
+    font-size: 38px;
+    line-height: 40px;
+    padding-top: 38px;
+  }
+  .search-form__text {
+    padding: 16px 0 0;
+  }
+  .search-form__search-bar {
+    padding: 48px 0;
+  }
+  .search-form__input {
+    height: 56px;
+  }
+  .search-form__btn {
+    height: 56px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .search-form {
+    padding: 0 16px;
+  }
+  .search-form__heading {
+    padding-top: 30px;
+    font-size: 36px;
+  }
+  .search-form__search-bar {
+    padding: 122px 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .search-form__input {
+    padding: 21px 16px;
+  }
+  .search-form__btn {
+    position: unset;
+    max-width: 100%;
+    padding: 16px 0 32px;
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "users": [
+    {
+      "name": "prak1234",
+      "email": "prak1234@gmail.com",
+      "password": "prak1234",
+      "_id": 1
+    },
+    {
+      "name": "prak2345",
+      "email": "prak2345@gmail.com",
+      "password": "prak2345",
+      "_id": 2
+    },
+    {
+      "name": "prak123",
+      "email": "prak123@gmail.com",
+      "password": "prak123",
+      "_id": 3
+    },
+    {
+      "name": "prak999",
+      "email": "prak999@gmail.com",
+      "password": "prak999",
+      "_id": 4
+    },
+    {
+      "name": "prak99",
+      "email": "prak99@gmail.com",
+      "password": "prak99",
+      "_id": 5
+    },
+    {
+      "name": "prak00",
+      "email": "prak00@gmail.com",
+      "password": "prak00",
+      "_id": 6
+    },
+    {
+      "name": "prak000",
+      "email": "prak000@gmail.com",
+      "password": "prak000",
+      "_id": 7
+    },
+    {
+      "name": "prak111",
+      "email": "prak111@gmail.com",
+      "password": "prak111",
+      "_id": 8
+    },
+    {
+      "name": "sha123",
+      "email": "sha123@gmail.com",
+      "password": "sha123",
+      "_id": 9
+    },
+    {
+      "name": "TestUser",
+      "email": "testuser1234@gmail.com",
+      "password": "test1234",
+      "_id": 10
+    }
+  ],
+  "saved": [
+    {
+      "_id": "04bb08d1-9e80-48bd-982c-bc2e0eba2535",
+      "keyword": "Virat Kohli",
+      "source": {
+        "id": null,
+        "name": "The Indian Express"
+      },
+      "author": "Venkata Krishna B",
+      "title": "India vs South Africa: With runs, guidance and star power, Virat Kohli and Rohit Sharma answer every doubt about their spots for foreseeable future",
+      "description": "IND vs SA: Not only did Rohit Sharma and Virat Kohli score heavily in the three games, but their contribution and helpful inputs that resulted in wickets couldn’t be missed on the field either",
+      "content": "The ODI series that began with plenty of uncertainty around Rohit Sharma and Virat Kohli ended with all smiles and a bonhomie that was hard to miss.At the team hotel, after cutting a cake on arrival,… [+4834 chars]",
+      "url": "https://indianexpress.com/article/sports/cricket/ind-vs-sa-odis-rohit-sharma-virat-kohli-answer-doubts-guidance-star-power-10407408/",
+      "urlToImage": "https://images.indianexpress.com/2025/12/ind-vs-sa-kohli-rohit.jpg",
+      "publishedAt": "2025-12-07T09:36:31Z",
+      "savedBy": 2
+    },
+    {
+      "_id": "b33c0fe4-995d-48e5-8a9e-8c583aaad383",
+      "keyword": "Christmas",
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Ellyn Lapointe",
+      "title": "Dreaming of a White Christmas? Don’t Hold Your Breath",
+      "description": "After a very cold and snowy start to December, temperatures will shift toward unseasonable warmth just in time for Christmas.",
+      "content": "A fast-moving winter storm blanketed much of the Northeast in white this weekend, bringing the first significant snowfall of the season to New York City, Boston, and Philadelphia. If the wintry scene… [+3165 chars]",
+      "url": "https://gizmodo.com/dreaming-of-a-white-christmas-dont-hold-your-breath-2000699726",
+      "urlToImage": "https://gizmodo.com/app/uploads/2025/12/snowy-trees-1200x675.jpg",
+      "publishedAt": "2025-12-15T17:05:16Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "7d35130a-9d35-48ed-b6b5-9ccd49641036",
+      "keyword": "Christmas",
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "Unknown",
+      "title": "Is it too early to put your Christmas tree up?",
+      "description": "When you should you decorate for Christmas – and how to keep your tree looking good until the big day.",
+      "content": "Annabel Rackham &amp; Emily Holt\r\nThe lights are up and the baubles are out: with trees across the country already decorated and on display, there has been some traditional grumbling about whether co… [+4779 chars]",
+      "url": "https://www.bbc.com/news/articles/cm28y24l9dvo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/5159/live/84cb98e0-cec5-11f0-81f3-a1b2f542a1e8.jpg",
+      "publishedAt": "2025-12-02T02:05:35Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "10a958a5-4194-43e8-9f17-17b848b16370",
+      "keyword": "Alexa",
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Jennifer Pattison Tuohy",
+      "title": "Alexa Plus’s website is live for some users",
+      "description": "The Alexa.com website appears to be live for some users. The browser-based home for Alexa Plus, the company's revamped digital voice assistant, was first announced at the Alexa Plus launch event in February. But until recently, Alexa.com redirected to an info…",
+      "content": "<ul><li></li><li></li><li></li></ul>\r\nAmazons AI-powered voice assistant has a new home on the web.\r\nAmazons AI-powered voice assistant has a new home on the web.\r\nby\r\nJennifer Pattison TuohyClose\r\nJ… [+4219 chars]",
+      "url": "https://www.theverge.com/news/845678/alexa-dot-com-alexa-plus-website-live",
+      "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/12/Screenshot-2025-12-16-at-9.00.12%E2%80%AFAM.png?quality=90&strip=all&crop=0,34.601780904843,100,64.463751775413",
+      "publishedAt": "2025-12-16T23:16:03Z",
+      "savedBy": 3
+    },
+    {
+      "_id": "154f3b90-ae4c-4f5a-a9b5-66a875c97a29",
+      "keyword": "Jaipur",
+      "source": {
+        "id": null,
+        "name": "Skift"
+      },
+      "author": "Bulbul Dhawan",
+      "title": "India’s $72 Billion Wedding Season Is Reshaping Travel, Again",
+      "description": "With every passing year, the budgets for Indian weddings are increasing as couples seek to make their big day more aligned to their personal tastes. Hotels, villas, palaces - all stand to benefit.",
+      "content": "India's annual wedding rush is back. Over the 45-day window beginning November 1, the country expects 460,000 weddings, and an estimated INR 6.5 trillion ($72.3 billion) in spending, according to Ind… [+766 chars]",
+      "url": "https://skift.com/2025/12/10/indias-72-billion-wedding-season-is-reshaping-travel-again/",
+      "urlToImage": "https://skift.com/wp-content/uploads/2024/11/Indian-wedding-amish-thakkar-1rLF6hxmm7M-unsplash.jpg?resize=1024,683",
+      "publishedAt": "2025-12-11T04:00:00Z",
+      "savedBy": 3
+    },
+    {
+      "_id": "c066eac6-d614-46bb-84d5-4f83b3bfc8d9",
+      "keyword": "Zootopia",
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Justin Carter",
+      "title": "‘Zootopia 2’ Makessssss a Lot of Thanksgiving Weekend Money",
+      "description": "Thanks to the holiday weekend and plenty of promo, a looooot of people went to see 'Zootopia 2.",
+      "content": "Disney put Zootopia 2 out in theaters before Thanksgiving weekend and shocker, it conquered the holiday in less than a week.\r\nPer the Hollywood Reporter, the animated sequel has made $556 million wor… [+1763 chars]",
+      "url": "https://gizmodo.com/zootopia-2-is-going-to-be-another-big-disney-hit-2000693770",
+      "urlToImage": "https://gizmodo.com/app/uploads/2025/07/ZOOTOPIA-2-Ginnifer-Goodwin-Jason-Bateman-Disney-1200x675.jpg",
+      "publishedAt": "2025-12-01T12:00:26Z",
+      "savedBy": 3
+    },
+    {
+      "_id": "caebdba5-ac50-4256-a3da-cea1733e4af5",
+      "keyword": "Photography",
+      "source": {
+        "id": "new-scientist",
+        "name": "New Scientist"
+      },
+      "author": "Alex Wilkins",
+      "title": "'Horrific and beautiful' whale rescue image wins photography prize",
+      "description": "See some of the winning entries for this year's Oceania Photo Contest, including Miesa Grobbelaar's shot of a whale, which took the top prize",
+      "content": "Tauhi, Miesa Grobbelaar’s winning photo\r\nMiesa Grobbelaar/TNC 2025 Oceania Photo Contest\r\nJust moments after Miesa Grobbelaar photographed this endangered humpback whale being freed from a chain, the… [+2416 chars]",
+      "url": "https://www.newscientist.com/article/2504831-horrific-and-beautiful-whale-rescue-image-wins-photography-prize/",
+      "urlToImage": "https://images.newscientist.com/wp-content/uploads/2025/11/18130805/sei274675219.jpg",
+      "publishedAt": "2025-11-25T12:00:24Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "c2f48262-acd6-4901-880f-9744d549938b",
+      "keyword": "tree",
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Ellyn Lapointe",
+      "title": "The Amazon Is Morphing Into a ‘Hypertropical’ Climate—and It’s as Apocalyptic as It Sounds",
+      "description": "A new study predicts that by 2100, the Amazon rainforest could experience up to 150 days of hot drought conditions each year, causing mass tree die-offs.",
+      "content": "When it comes to regulating Earths climate, few ecosystems play a more important role than the Amazon rainforest. But what happens when global warming dramatically alters the Amazons climate?\r\nA stud… [+3943 chars]",
+      "url": "https://gizmodo.com/the-amazon-is-morphing-into-a-hypertropical-climate-and-its-as-apocalyptic-as-it-sounds-2000698491",
+      "urlToImage": "https://gizmodo.com/app/uploads/2025/12/Amazon-rainforest-drought-1200x675.jpg",
+      "publishedAt": "2025-12-11T16:50:23Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "39ec17cd-b922-4ded-9890-3e122e3757a3",
+      "keyword": "stranger things",
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Germain Lussier",
+      "title": "The 4 ‘Stranger Things’ Episodes the Duffers Suggest You Rewatch",
+      "description": "'Stranger Things 5' is out this week on Netflix, so your window to prepare is dwindling.",
+      "content": "It’s been a long, long wait, but the fifth and final season of Stranger Things is almost here. Stranger Things season five debuts on Wednesday evening with four episodes making up the first of three … [+2597 chars]",
+      "url": "https://gizmodo.com/four-key-stranger-things-rewatch-episodes-netflix-2000690814",
+      "urlToImage": "https://gizmodo.com/app/uploads/2025/11/Stranger-Things-5-group-hole-1200x675.jpg",
+      "publishedAt": "2025-11-24T22:00:24Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "ae4f5061-df0f-46d4-8b13-0f2deb5a4cf9",
+      "keyword": "forest",
+      "source": {
+        "id": null,
+        "name": "Popular Mechanics"
+      },
+      "author": "Tim Newcomb",
+      "title": "Archaeologists Were Searching a Forest in the Clouds—and Found 100 Structures From an Ancient City",
+      "description": "Experts now hope to share the story of the site with as many people as possible.",
+      "content": "Heres what youll learn when you read this story:\r\n<ul><li>Archaeologists with the World Monuments Fund uncovered over 100 previously unknown archaeological structures in Perus Rio Abiseo National Par… [+4065 chars]",
+      "url": "https://www.popularmechanics.com/science/archaeology/a69607175/ancient-city-cloud-forest-1764692282/",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/Wa6KzbexoljvXdJDukOBGg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU7Y2Y9d2VicA--/https://media.zenfs.com/en/popular_mechanics_642/2a82bb96a893e3a92a8948bc8ef46e0a",
+      "publishedAt": "2025-12-02T16:21:00Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "b1a21e5b-1a41-41e4-a8e2-74e9526e3f24",
+      "keyword": "photography",
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Andrew Liszewski",
+      "title": "The Kodak Snapic A1 is a $99 film camera that makes double exposures easy",
+      "description": "Reto, a Hong Kong-based camera maker that licenses the Kodak brand, has announced a new 35mm film camera called the Snapic A1 that ships next week. Although its design, with either a rhino gray or ivory white plastic housing, gives off disposable camera vibes…",
+      "content": "<ul><li></li><li></li><li></li></ul>\r\nThe affordable shooter uses a three-element glass lens with two focus zones for portrait or landscape photography.\r\nThe affordable shooter uses a three-element g… [+2775 chars]",
+      "url": "https://www.theverge.com/news/828648/reto-kodak-snapic-a1-35mm-film-camera-double-exposure",
+      "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/11/kodak_snapic_1.jpg?quality=90&strip=all&crop=0%2C10.743900894725%2C100%2C78.512198210551&w=1200",
+      "publishedAt": "2025-11-25T15:40:04Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "c5bf5d65-6759-4792-98cc-c143db44a494",
+      "keyword": "photography",
+      "source": {
+        "id": null,
+        "name": "Android Central"
+      },
+      "author": "nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz",
+      "title": "Samsung might bring an old but gold camera feature back in a future Galaxy S",
+      "description": "Samsung was rumored to consider returning a key photography feature to an unknown future Galaxy S series.",
+      "content": "What you need to know\r\n<ul><li>Recent Samsung rumors claim the company may reach back for an old dual aperture camera feature for a future Galaxy S phone series.</li><li>A tipster on Chinese social m… [+3102 chars]",
+      "url": "https://www.androidcentral.com/phones/samsung-galaxy/samsung-might-bring-an-old-but-gold-camera-feature-back-in-a-future-galaxy-s",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/Xx9xGAMaQd25QDEJtPLXWK-2500-80.jpg",
+      "publishedAt": "2025-12-17T21:04:20Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "bc46f7c8-cb5f-4c96-95c4-d600240ed3be",
+      "keyword": "chatgpt",
+      "source": {
+        "id": "wired",
+        "name": "Wired"
+      },
+      "author": "Maxwell Zeff",
+      "title": "OpenAI Launches GPT-5.2 as It Navigates ‘Code Red’",
+      "description": "The ChatGPT-maker is releasing its “best model yet” as it faces new pressures from Google and other AI competitors.",
+      "content": "OpenAI has introduced GPT-5.2, its smartest artificial intelligence model yet, with performance gains across writing, coding, and reasoning benchmarks. The launch comes just days after CEO Sam Altman… [+2477 chars]",
+      "url": "https://www.wired.com/story/openai-gpt-launch-gemini-code-red/",
+      "urlToImage": "https://media.wired.com/photos/6939fd17eaa4088bd3b69c9f/191:100/w_1280,c_limit/GettyImages-2249343616.jpg",
+      "publishedAt": "2025-12-11T18:00:00Z",
+      "savedBy": 1
+    },
+    {
+      "_id": "191ef319-e1d6-4b92-83b2-dd1573311be8",
+      "keyword": "Dubai",
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Selima Hussain,Tyler Merkel,Havovi Cooper",
+      "title": "Inside the Dubai chocolate boom and the factories racing to keep up",
+      "description": "We visited the creator of Dubai chocolate and its first industrial operation and traced how the supply chain is racing to meet soaring demand.",
+      "content": "Whether it's local bakeries or big chocolatiers, there's a version of Dubai chocolate just about everywhere. So how did this dessert become a viral sensation, and how are businesses around the world … [+68 chars]",
+      "url": "https://www.businessinsider.com/inside-dubai-chocolate-boom-and-factories-racing-to-keep-up-2025-12",
+      "urlToImage": "https://i.insider.com/6945c0a564858d02d21730e3?width=1200&format=jpeg",
+      "publishedAt": "2025-12-21T17:00:01Z",
+      "savedBy": 10
+    },
+    {
+      "_id": "a4c45d7d-2498-42e1-9c8f-1b535760fe4a",
+      "keyword": "Dubai",
+      "source": {
+        "id": null,
+        "name": "Dezeen"
+      },
+      "author": "Francesca Tesler",
+      "title": "Designing in Dubai is like \"working with wet clay\" says panel at Gaggenau Dubai",
+      "description": "Dubai offers designers the opportunity to \"innovate, fail fast, move on again,\" according to speakers at a talk hosted by Dezeen and kitchen appliances brand Gaggenau. Read more",
+      "content": "Dubai offers designers the opportunity to \"innovate, fail fast, move on again,\" according to speakers at a talk hosted by Dezeen and kitchen appliances brand Gaggenau.\r\nDezeen teamed up with the bran… [+2857 chars]",
+      "url": "https://www.dezeen.com/2025/12/04/dubai-design-panel-gaggenau/",
+      "urlToImage": "https://static.dezeen.com/uploads/2025/12/GG-4.jpg",
+      "publishedAt": "2025-12-04T08:00:25Z",
+      "savedBy": 10
+    },
+    {
+      "_id": "66f13447-4d4f-48b8-829b-0ef80ffaea93",
+      "keyword": "owala",
+      "source": {
+        "id": null,
+        "name": "disneyfoodblog.com"
+      },
+      "author": "Jaden Green",
+      "title": "The One Water Bottle EVERY Disney World Guest Is Carrying Right Now",
+      "description": "You're going to fall in love with this Disney Princess Owala Collection!",
+      "content": "HYDRATE, HYDRATE, HYDRATE!\r\nOwala FreeSip\r\nThere is one thing that we are constantly reminding our readers — if you’re going to Disney World, you need to make sure you stay hydrated. Drinking water w… [+2615 chars]",
+      "url": "https://www.disneyfoodblog.com/2025/12/09/the-one-water-bottle-every-disney-world-guest-is-carrying-right-now/",
+      "urlToImage": "https://www.disneyfoodblog.com/wp-content/uploads/2025/07/DFB-asset-affiliate-partner-owala-rapunzel-disney-princess-freesip-9-700x525.jpg",
+      "publishedAt": "2025-12-09T21:00:48Z",
+      "savedBy": 10
+    },
+    {
+      "_id": "0016e3f3-cebf-4eeb-86db-3ad73624bef6",
+      "keyword": "stanley",
+      "source": {
+        "id": null,
+        "name": "TheStreet"
+      },
+      "author": "Anand Sinha",
+      "title": "MicroStrategy sends sharp warning letter to MSCI",
+      "description": "Billionaire tech leader Michael Saylor-led Bitcoin (BTC) treasury firm MicroStrategy (Nasdaq: MSTR), now Strategy, has finally written to Morgan Stanley...",
+      "content": "Billionaire tech leader Michael Saylor-led Bitcoin (BTC) treasury firm MicroStrategy (Nasdaq: MSTR), now Strategy, has finally written to Morgan Stanley Capital International (MSCI) over the potentia… [+3949 chars]",
+      "url": "https://www.thestreet.com/crypto/markets/microstrategy-sends-sharp-warning-letter-to-msci",
+      "urlToImage": "https://media.zenfs.com/en/thestreet_881/d1aa5494f6ca9d52fa64ef014153b18a",
+      "publishedAt": "2025-12-10T19:21:04Z",
+      "savedBy": 10
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import "./newsCards.css";
+import "./NewsCards.css";
 import { formatDateToLong } from "../../utils/formatDate";
 import CurrentUserContext from "../../contexts/CurrentUserContext";
 import { useContext } from "react";

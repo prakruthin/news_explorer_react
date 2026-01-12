@@ -1,6 +1,6 @@
 import "./Footer.css";
 import githubIcon from "../../assets/github.svg";
-import linkedinIcon from "../../assets/linkedin.svg";
+import linkedinIcon from "../../assets/linkedIn.svg";
 
 function Footer() {
   return (

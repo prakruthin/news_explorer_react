@@ -13,13 +13,16 @@ function NewsCards({
   isLoggedIn,
 }) {
   const currentUser = useContext(CurrentUserContext);
-  const isArticleSaved = (article) =>
-    savedNews.some((saved) => saved.url === article.url);
+  const isArticleSaved = (article) => {
+    if (!Array.isArray(savedNews)) return false;
+
+    return savedNews.some((saved) => saved.link === article.link);
+  };
 
   const itemWithMeta = {
     ...item,
     keyword: searchKeyword,
-    savedBy: currentUser._id,
+    owner: currentUser._id,
   };
   const handleBookmarkClick = () => {
     if (!isLoggedIn) return;
@@ -30,9 +33,9 @@ function NewsCards({
     <li className="card">
       <img
         className="card__image"
-        src={item.urlToImage || "/images/news-placeholder.png"}
+        src={item.image || "/images/news-placeholder.png"}
         alt={item.title || "News image"}
-        onClick={() => window.open(item.url, "_blank")}
+        onClick={() => window.open(item.link, "_blank")}
       />
 
       {isMainRoute ? (
@@ -56,6 +59,8 @@ function NewsCards({
       ) : (
         <div>
           <p className="card__keyword">{item.keyword}</p>
+          {/* <p className="card__keyword">{searchKeyword}</p> */}
+
           <div className="card__text-wrapper">
             <span className="card__tooltip">Remove from saved</span>
             <button
@@ -71,12 +76,12 @@ function NewsCards({
 
       <div className="card__contents">
         <p className="card__date">
-          {item.publishedAt ? formatDateToLong(item.publishedAt) : ""}
+          {item.date ? formatDateToLong(item.date) : ""}
         </p>
 
         <h3 className="card__title">{item.title}</h3>
 
-        <p className="card__description">{item.description}</p>
+        <p className="card__description">{item.text}</p>
 
         <p className="card__source">{item.source?.name?.toUpperCase()}</p>
       </div>

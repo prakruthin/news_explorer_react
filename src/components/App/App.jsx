@@ -12,8 +12,8 @@ import LoginModal from "../LoginModal/LoginModal";
 import RegisterModal from "../RegisterModal/RegisterModal";
 import ProtectedRoute from "../../ProtectedRoute/ProtectedRoute.jsx";
 import { getSaved, addSaved, deleteSaved } from "../../utils/api.js";
-import { register, authorize } from "../../utils/auth.js";
-import { setToken, removeToken } from "../../utils/token.js";
+import { register, authorize, getUserData } from "../../utils/auth.js";
+import { getToken, setToken, removeToken } from "../../utils/token.js";
 import RegisterSuccessModal from "../RegisterSuccessModal/RegisterSuccessModal.jsx";
 
 function App() {
@@ -28,8 +28,6 @@ function App() {
   const isMainRoute = location.pathname === "/";
 
   const navigate = useNavigate();
-
-  const generateFakeToken = () => Math.random().toString(36).substring(2);
 
   const handleSignup = () => {
     setActiveModal("register-form");
@@ -60,16 +58,13 @@ function App() {
       return;
     }
     function makeRequest() {
-      return authorize({ email, password }).then((user) => {
-        const fakeToken = generateFakeToken();
-
-        setToken(fakeToken);
-        localStorage.setItem("user", JSON.stringify(user));
-
-        setCurrentUser(user);
-        setIsLoggedIn(true);
-        closeActiveModal();
-        navigate("/");
+      return authorize({ email, password }).then((data) => {
+        if (data.token) {
+          setToken(data.token);
+          setIsLoggedIn(true);
+          closeActiveModal();
+          navigate("/");
+        }
       });
     }
     handleSubmit(makeRequest);
@@ -77,7 +72,8 @@ function App() {
 
   const handleRegisterModalSubmit = ({ email, password, name }) => {
     function makeRequest() {
-      return register({ email, password, name }).then(() => {
+      return register({ email, password, name }).then((data) => {
+        console.log(data);
         setActiveModal("register-success");
       });
     }
@@ -88,19 +84,22 @@ function App() {
   const handleSignOut = () => {
     removeToken();
     localStorage.removeItem("user");
+    setSavedNews([]);
     navigate("/");
     setIsLoggedIn(false);
     setCurrentUser({});
   };
 
   const handleCardBookmark = (item) => {
-    const alreadySaved = savedNews.some((saved) => saved.url === item.url);
+    const token = getToken();
+    if (!token) return;
 
-    if (alreadySaved) return;
-
-    addSaved(item)
-      .then((savedItem) => {
-        setSavedNews((prev) => [...prev, savedItem]);
+    addSaved(item, token)
+      .then((res) => {
+        const savedArticle = res.data ?? res;
+        setSavedNews((prev) =>
+          Array.isArray(prev) ? [...prev, savedArticle] : [savedArticle]
+        );
       })
       .catch((err) => {
         console.error("Error saving article:", err);
@@ -108,9 +107,16 @@ function App() {
   };
 
   const handleCardBookmarkDelete = (item) => {
-    deleteSaved(item._id)
+    const token = getToken();
+    if (!token) return;
+
+    deleteSaved(item._id, token)
       .then(() => {
-        setSavedNews((prev) => prev.filter((saved) => saved._id !== item._id));
+        setSavedNews((prev) =>
+          Array.isArray(prev)
+            ? prev.filter((saved) => saved._id !== item._id)
+            : []
+        );
       })
       .catch((err) => {
         console.error("Error deleting article:", err);
@@ -118,7 +124,9 @@ function App() {
   };
 
   const toggleBookmark = (item) => {
-    const savedArticle = savedNews.find((saved) => saved.url === item.url);
+    if (!Array.isArray(savedNews)) return;
+
+    const savedArticle = savedNews.find((saved) => saved.link === item.link);
 
     if (savedArticle) {
       return handleCardBookmarkDelete(savedArticle);
@@ -144,22 +152,24 @@ function App() {
   }, [activeModal]);
 
   useEffect(() => {
-    getSaved()
-      .then((data) => {
-        setSavedNews(data);
+    const token = getToken();
+    if (!token) return;
+
+    getUserData(token)
+      .then((user) => {
+        setIsLoggedIn(true);
+        setCurrentUser(user.data);
+      })
+      .catch((err) => {
+        console.error("Error fetching user data", err);
+      });
+
+    getSaved(token)
+      .then((articles) => {
+        setSavedNews(articles.data);
       })
       .catch(console.error);
-  }, []);
-
-  useEffect(() => {
-    const token = localStorage.getItem("jwt");
-    const storedUser = localStorage.getItem("user");
-
-    if (!token || !storedUser) return;
-
-    setIsLoggedIn(true);
-    setCurrentUser(JSON.parse(storedUser));
-  }, []);
+  }, [isLoggedIn]);
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
@@ -193,7 +203,8 @@ function App() {
               element={
                 <ProtectedRoute
                   element={Saved}
-                  isLoggedIn={isLoggedIn}
+                  // isLoggedIn={isLoggedIn}
+                  isLoggedIn={isLoggedIn && currentUser._id}
                   savedNews={savedNews}
                   isMainRoute={isMainRoute}
                   searchKeyword={searchKeyword}

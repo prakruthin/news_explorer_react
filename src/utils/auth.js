@@ -1,5 +1,5 @@
-// import { baseUrl } from "./constants";
-const baseUrl = "http://localhost:3001";
+import { baseUrl } from "./constants";
+// const baseUrl = "http://localhost:3001";
 import { checkResponse } from "./api.js";
 
 function register({ email, password, name }) {

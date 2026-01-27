@@ -22,6 +22,7 @@ function Main({
         <SearchForm
           setNewsArticles={setNewsArticles}
           setSearchKeyword={setSearchKeyword}
+          searchKeyword={searchKeyword}
           setIsLoading={setIsLoading}
         />
         {newsArticles.length > 0 && (

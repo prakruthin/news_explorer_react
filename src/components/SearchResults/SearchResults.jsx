@@ -26,7 +26,6 @@ function SearchResults({
   };
 
   const visibleArticles = newsArticles.slice(0, visibleCount);
-
   return (
     <div className="search-results">
       <h3 className="search-results__heading">Search Results</h3>
@@ -34,7 +33,7 @@ function SearchResults({
         {visibleArticles.map((item) => {
           return (
             <NewsCards
-              key={item.url}
+              key={item.link}
               item={item}
               searchKeyword={searchKeyword}
               isMainRoute={isMainRoute}

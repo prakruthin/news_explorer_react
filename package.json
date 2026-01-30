@@ -8,7 +8,9 @@
     "dev": "vite --open",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "npm run build && scp -r ./dist/* prakruthin28@gcp-ne.blinklab.com:/home/prakruthin28/frontend_news_explorer"
   },
   "dependencies": {
     "react": "^18.3.1",

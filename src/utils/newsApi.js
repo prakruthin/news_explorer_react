@@ -13,14 +13,11 @@ export const filterNewsData = (data) => {
   if (!data?.articles) return [];
 
   return data.articles.map((article) => ({
-    _id: crypto.randomUUID(),
-    source: article.source ?? { id: null, name: "" },
-    author: article.author ?? "Unknown",
     title: article.title ?? "",
-    description: article.description ?? "",
-    content: article.content ?? "",
-    url: article.url ?? "",
-    urlToImage: article.urlToImage ?? "",
-    publishedAt: article.publishedAt ?? "",
+    text: article.description ?? "",
+    date: article.publishedAt ?? "",
+    source: article.source?.name ?? "Unknown",
+    link: article.url ?? "",
+    image: article.urlToImage ?? "",
   }));
 };

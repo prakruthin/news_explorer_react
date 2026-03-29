@@ -1,38 +1,48 @@
-const baseUrl = "http://localhost:3001";
+import { baseUrl } from "./constants";
+// const baseUrl = "http://localhost:3001";
 
 export function checkResponse(res) {
   if (res.ok) return res.json();
   return Promise.reject(`Error: ${res.status}`);
 }
 
-export function getSaved() {
-  return fetch(`${baseUrl}/saved`).then(checkResponse);
-}
-
-export function addSaved(article) {
-  const savedArticle = {
-    _id: article._id,
-    keyword: article.keyword,
-    source: { id: article.source?.id, name: article.source?.name },
-    author: article.author || "",
-    title: article.title || "",
-    description: article.description || "",
-    content: article.content || "",
-    url: article.url,
-    urlToImage: article.urlToImage || "",
-    publishedAt: article.publishedAt || "",
-    savedBy: article.savedBy,
-  };
-
-  return fetch(`${baseUrl}/saved`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(savedArticle),
+export function getSaved(token) {
+  return fetch(`${baseUrl}/articles`, {
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
   }).then(checkResponse);
 }
 
-export function deleteSaved(id) {
-  return fetch(`${baseUrl}/saved/${id}`, {
+export function addSaved(
+  { keyword, title, text, date, source, link, image, owner },
+  token
+) {
+  return fetch(`${baseUrl}/articles`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({
+      keyword,
+      title,
+      text,
+      date,
+      source,
+      link,
+      image,
+      owner,
+    }),
+  }).then(checkResponse);
+}
+
+export function deleteSaved(articleId, token) {
+  return fetch(`${baseUrl}/articles/${articleId}`, {
     method: "DELETE",
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
   }).then(checkResponse);
 }

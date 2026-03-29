@@ -2,13 +2,11 @@ import "./Saved.css";
 import NewsCards from "../NewsCards/NewsCards";
 import CurrentUserContext from "../../contexts/CurrentUserContext";
 import { useContext } from "react";
+
 function Saved({ savedNews, isMainRoute, onCardBookmarkDelete }) {
   const currentUser = useContext(CurrentUserContext);
-  const userSavedNews = savedNews.filter(
-    (item) => item.savedBy === currentUser._id
-  );
   const uniqueKeywords = Array.from(
-    new Set(userSavedNews.map((item) => item.keyword))
+    new Set(savedNews.map((item) => item.keyword))
   );
 
   const keywordText = (() => {
@@ -32,15 +30,15 @@ function Saved({ savedNews, isMainRoute, onCardBookmarkDelete }) {
       <div className="saved__container">
         <p className="saved__name">Saved articles</p>
         <h2 className="saved__heading">
-          {currentUser.name}, you have {userSavedNews.length} saved articles
+          {currentUser.name}, you have {savedNews.length} saved articles
         </h2>
         <p className="saved__keywords-block">
           By keywords: <span className="saved__keywords">{keywordText}</span>
         </p>
       </div>
-      {userSavedNews.length ? (
+      {savedNews.length ? (
         <ul className="saved__cards-list">
-          {userSavedNews.map((item) => {
+          {savedNews.map((item) => {
             return (
               <NewsCards
                 key={item._id}

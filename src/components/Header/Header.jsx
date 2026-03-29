@@ -9,7 +9,6 @@ function Header({
   isMainRoute,
   onRegisterModalSubmit,
 }) {
-  console.log(isMainRoute);
   return (
     <header
       className={`header ${
